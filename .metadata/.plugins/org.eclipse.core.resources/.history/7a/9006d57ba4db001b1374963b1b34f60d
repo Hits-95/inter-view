@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Pallindrome {
+
+	public void isPallindrome(String str) {
+
+	}
+
+	public static void main(String[] argv) {
+
+		Pallindrome obj = new Pallindrome();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter String : ");
+		String str = sc.next();
+		
+		obj.isPallindrome(str);
+	}
+}

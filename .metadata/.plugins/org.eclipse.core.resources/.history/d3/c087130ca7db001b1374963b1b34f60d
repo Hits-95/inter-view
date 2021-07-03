@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Pallindrome {
+
+	public boolean isPallindrome(String str) {
+
+		char[] rev = str.toCharArray();
+
+		for (int i = 0; i < str.length() / 2; i++) {
+			if (!(rev[i] == rev[str.length() - 1 + i]))
+				return false;
+		}
+		return true;
+
+	}
+
+	public static void main(String[] argv) {
+
+		Pallindrome obj = new Pallindrome();
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter String : ");
+		String str = sc.next();
+
+		if (obj.isPallindrome(str))
+			System.out.println("Pallindrome.");
+		else
+			System.out.println("Not Pallindrome.");
+	}
+}
