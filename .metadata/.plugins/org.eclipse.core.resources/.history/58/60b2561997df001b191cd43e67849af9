@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Reverse_Line {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Reverse_Line obj = new Reverse_Line();
+		
+		System.out.print("Enter Line : ");
+		String line = sc.nextLine();
+		System.out.println(line);
+
+	}
+
+}
