@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class FirstUpperCase {
+
+	public static int isUpperVowel(char ch){
+		
+		return 0;
+	}
+	
+	//main
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+	}
+
+}

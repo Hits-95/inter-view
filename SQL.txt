@@ -1,0 +1,13 @@
+1) 2nd MAx Salary
+=> i) SELECT max(sal) from emp
+      WHERE sal not in (SELECT max(sal) FROM emp)
+
+   ii)  SELECT max(sal) from emp
+      WHERE sal < (SELECT max(sal) FROM emp)
+-----------------------------------------------------
+2) 3rd max salary
+SELECT max(sal) from emp WHERE sal < (SELECT max(sal) from emp WHERE sal < (SELECT max(sal) from emp))
+---------------------------------------------------------
+3) desc oder
+SELECT * FROM `emp` order by sal desc
+----------------------------------------------
